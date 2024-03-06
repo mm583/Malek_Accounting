@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>خليك معنا </title>
+
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+
+          }
+
+          body{
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               background-color: white;
+               overflow: scroll;
+               font-weight: 900;
+               letter-spacing: 1px;
+          }
+
+          .About{
+               width: 100%;
+               float: left;
+              margin: 30px;
+          }
+
+          .About h1{
+               color: black;
+               font-size: 2em;
+               text-align: center;
+               margin-bottom: 10px;
+             
+              
+          }
+
+          .About p{
+              text-align: center;
+              color: #1d07e3;
+
+            
+          }
+
+          .About h3{
+               color: black;
+               font-size: 1.5em;
+               margin-top: 10px;
+               text-align: center;
+               margin-bottom: 15px;
+             
+              
+          }
+
+          .contact_one{
+            padding: 15px;
+            width: 40%;
+            float: right;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 3s;
+            margin-top: 20px;
+            margin-right: 20px;
+            box-shadow:inset 0 0 22px 15px rgb(220, 5, 152);
+            gap: 8px;
+            }
+
+            .contact_one:hover {
+                transform: scale(1.1);
+ 
+           }
+
+
+          
+          
+          .contact{
+               position: fixed;
+               top: 55%;
+               right: 60%;
+               width: 40%;
+               float: left;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               cursor: pointer;
+               transition: all 3s;
+               margin-top: 20px;
+               margin-right: 10px;
+               box-shadow:inset 0 0 22px 15px rgb(220, 177, 5);
+
+          }
+
+          .contact:hover {
+               transform: scale(1.1);
+
+          }
+
+          .contact a{
+               margin: 10px;
+          }
+
+          .About h2{
+               margin: 60px;
+               float: right;
+               margin-bottom: 10px;
+               color: blue;
+               font-family: sans-serif;
+               font-size: 3.5em;
+               
+
+           
+          }
+
+
+          #sticky-element {
+               position: fixed;
+                top: 80%;
+               right: 78%;
+               width: 100%;
+               box-shadow:inset 0 0 22px 15px rgb(220, 177, 5);
+               padding: 10px;
+              font-size: 30px;
+              margin: 20px;
+              font-weight: 900;
+              text-align: right;
+              transition: all 3s;
+              cursor: pointer;
+              }
+
+              #sticky-element:hover {
+               transform: scale(1.2);
+
+          }
+
+              @keyframes fiery-text {
+               0% {
+                   color: red;
+                   text-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red, 0 0 120px red, 0 0 160px red;
+               }
+               50% {
+                   color: rgb(28, 28, 27);
+                   text-shadow: 0 0 10px rgb(16, 15, 14), 0 0 20px rgb(14, 13, 13), 0 0 40px rgb(10, 10, 10), 0 0 80px rgb(19, 19, 18), 0 0 120px rgb(14, 13, 13), 0 0 160px rgb(9, 9, 9);
+               }
+               100% {
+                   color: rgb(3, 101, 12);
+                   text-shadow: 0 0 10px rgba(13, 107, 5, 0.425), 0 0 20px rgba(29, 104, 4, 0.356), 0 0 40px rgba(3, 71, 12, 0.256), 0 0 80px rgba(24, 130, 5, 0.47), 0 0 120px rgb(3, 96, 3), 0 0 160px rgba(3, 97, 17, 0.333);
+               }
+           }
+              
+              .fiery-text {
+               font-size: 36px;
+               font-weight: bold;
+               animation: fiery-text 5s infinite;
+               display: inline-block;
+              margin-bottom: 40px;
+              margin-top: 25px;
+              margin-left: 40px;
+              margin-right: 40px;
+          
+           }
+
+           .services{
+               display: grid;
+               flex-direction: row;
+               flex-wrap: wrap;
+               flex: 2;
+               width: 100%;
+               padding: 20px 10px;
+               text-align: center;
+              box-shadow: inset 0 0 22px 12px rgb(241, 185, 185);
+               padding: 15px;
+            
+              
+           }
+
+      
+          
+          
+          
+
+
+           .services h1{
+               margin-left: 50%;
+               color: white;
+               background-color: brown;
+               width: 300px;
+               border-radius: 22pc;
+               padding: 10px;
+             font-size: 2.5em;
+             margin-bottom: 15px;
+
+           }
+
+
+           .services h2{
+               color: white;
+               background-color:black;
+               border-radius: 22pc;
+               padding: 10px;
+             font-size: 2em;
+             font-family: sans-serif;
+
+           }
+
+           .services h2:hover{
+            color: white;
+            background-color:darkmagenta;
+            border-radius: 12px;
+            padding: 10px;
+          
+
+        }
+
+
+
+
+           .services span:hover{
+            color: #ffffff;
+            background-color: chocolate;
+            padding: 10px;
+            border-radius: 12px;
+          
+            
+ 
+
+           }
+
+
+           
+
+     </style>
+</head>
+<body>
+
+
+    <div class="contact_one"> 
+         
+
+        <a  href="https://wa.me/966547395579" target="_blank" style="text-decoration: none; color: #ffffff; 
+           background-color: green; padding: 5px; 
+           font-size: 22px; border-radius: 15px;">Chat with us on WhatsApp</a>
+
+           <a  href="https://www.tiktok.com/@acc.malek?_t=8iGclH2pNpf&_r=1" target="_blank" style="text-decoration: none; 
+           color: #ffffff;
+            background-color: black; padding: 5px; font-size: 22px; 
+            border-radius: 15px; ">Chat with us on tiktok</a>
+
+            <a href="https://t.me/mifrs4" target="_blank" style="text-decoration: none;
+             color: #ffffff; background-color: #1d07e3; padding: 5px; 
+             font-size: 22px; border-radius: 15px; ">Chat with us on Telegram</a>
+ </div>
+
+     <div class="contact"> 
+         
+
+          <a  href="https://wa.me/966547395579" target="_blank" style="text-decoration: none; color: #ffffff; 
+             background-color: green; padding: 5px; 
+             font-size: 22px; border-radius: 15px;">Chat with us on WhatsApp</a>
+
+             <a  href="https://www.tiktok.com/@acc.malek?_t=8iGclH2pNpf&_r=1" target="_blank" style="text-decoration: none; 
+             color: #ffffff;
+              background-color: black; padding: 5px; font-size: 22px; 
+              border-radius: 15px; ">Chat with us on tiktok</a>
+
+              <a href="https://t.me/mifrs4" target="_blank" style="text-decoration: none;
+               color: #ffffff; background-color: #1d07e3; padding: 5px; 
+               font-size: 22px; border-radius: 15px; ">Chat with us on Telegram</a>
+   </div>
+
+<div class="profile">
+   <div id="sticky-element"> بخدمتكم دائما  </div>
+
+  
+   
+     <div class="About">
+          <h1>Hello , My name is  Malek Mohamed </h1>
+          <p> IFRS DIPLOMA </p>
+          <h3> I am a chief of accounts and Accounting Instructor </h3>
+          <p> <span class="fiery-text">هي منصة تعليمية تقوم على تقديم العديد من مسارات تعلم  المحاسبة  </span>   </p>
+          <h2> هدفنا نجاحك ، بادر بالاشتراك معنا  </h2>
+     </div> 
+
+</div>
+
+
+     <div class="services">
+          <h1> services </h1>
+
+          <div class="services">
+               <h2>Accounting Basics  
+               <span> أساسيات المحاسبة </span></h2>
+              
+<a class="video" href="https://t.me/Malek_Accounting/2" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> عناصر شبتر 1 </span> </a>
+
+<a class="video" href="https://t.me/Malek_Accounting/3" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;;"> &#127789;  &#9749;  &#127909; <span> عناصر شبتر 2 </span> </a>
+
+<a class="video" href="https://t.me/Malek_Accounting/10" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Transaction Analysis - video 1  تحليل المعاملات </span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/11" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Transaction Analysis - video 2  تحليل المعاملات </span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/12" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Transaction Analysis - video 3  تحليل المعاملات </span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/4" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Accounting Equation video 1  المعادلة المحاسبية </span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/5" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Accounting Equation video 2   المعادلة المحاسبية </span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/7" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Journal entry and ledger video 1  قيود اليومية ودفتر الاستاذ</span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/8" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Journal entry and ledger video 2  قيود اليومية ودفتر الاستاذ</span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/9" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Trail Balance  ميزان المراجعة  </span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/16" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> income statement قائمة الدخل  </span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/17" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Retained earnings statement and statement of financial position   </span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/19" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Income statement قائمة الدخل    </span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/20" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Retained earnings statement قائمة الارباح المرحلة    </span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/21" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> statement of financial position  قائمة المركز المالي    </span> </a>
+
+
+<a class="video" href="https://t.me/Malek_Accounting/23" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> Adjusting the Accounts قيود التسوية    </span> </a>
+
+</div>
+
+
+
+<div class="services"><h2> Financial Accounting  
+               <span> المحاسبة المالية  </span></h2>
+
+               <a href="https://t.me/Malek_Accounting/24" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> مقدمة في شبتر 5    </span> </a>
+
+
+               <a href="https://t.me/Malek_Accounting/25" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> قيود الشراء  - journal purchase     </span> </a>
+
+
+               <a href="https://t.me/Malek_Accounting/26" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> تسجيل تكاليف الشحن للمشتري  -  freight costs      </span> </a>
+
+
+
+               <a href="https://t.me/Malek_Accounting/27" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  تسجيل مرتجعات المشتريات وقيد الخصم مع السداد في دفاتر المشتري     </span> </a>
+
+
+               <a href="https://t.me/Malek_Accounting/28" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  عمليات البيع باستخدام  periodic inventory system    </span> </a>
+
+
+               <a href="https://t.me/Malek_Accounting/29" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  قائمة الدخل  - Income statement   </span> </a>
+
+
+
+               <a href="https://t.me/Malek_Accounting/30" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  FIFO - Average   </span> </a>
+
+
+
+               <a href="https://t.me/Malek_Accounting/56" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  ch.8 - Allowance    </span> </a>
+
+
+               <a href="https://t.me/Malek_Accounting/35" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  طريقة القسط الثابت  - straight line method SLM </span> </a>
+
+
+               <a href="https://t.me/Malek_Accounting/37" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  حساب تكلفة الاصل - Cost  OF Equipment </span> </a>
+
+
+               <a href="https://t.me/Malek_Accounting/37" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  حساب تكلفة الاصل - Cost  OF Equipment </span> </a>
+
+
+</div>
+
+
+<div class="services"><h2> Financial Management  
+               <span> الادارة المالية  </span>
+           </h2>
+
+           <a href="https://t.me/Malek_Accounting/40" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  Future value  - FV - القيمة المستقبلية  </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/41" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc;padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  Future value Multiple  - القيمة المستقبلية لاكثر من دفعة متغيرة  </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/42" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  القيمة الحالية - present value  - PV </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/43" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  payback period  - فترة الاسترداد </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/44" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  Discounted payback period  -  فترة الاسترداد المخصومة </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/45" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  Net present value (NPV) - PI</span> </a>
+
+           </div>
+
+
+
+
+          
+
+
+           <div class="services"><h2> Intermediate Accounting:1  
+               <span> محاسبة الشركات   </span>
+           </h2>
+
+           <a href="https://t.me/Malek_Accounting/52" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  تكلفة الارض - Cost of Land </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/54" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  حساب المتوسط المرجح - WAE </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/63" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span> مثال الطيارة - Component asset </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/65" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  الاضمحلال - Impairment  </span> </a>
+
+
+
+           </div>
+
+
+
+
+           <div class="services"><h2> Intermediate Accounting:2  
+               <span> محاسبة الشركات   </span>
+           </h2>
+
+           <a href="https://t.me/Malek_Accounting/67" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  مكونات حقوق الملكية - Component of Equity  </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/69" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  اصدار اسهم - Issued shares  </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/71" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  توزيع ارباح كاش  - cash dividends  </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/73" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  شراء سندات - Debt investment HFC  </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/75" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  Equity investment and Equity method </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/77" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  التسجيل في دفاتر المستأجر - Lessee Accounting  </span> </a>
+
+
+
+           </div>
+
+
+           <div class="services"><h2> Cost  Accounting: 1   
+               <span>   محاسبة  التكاليف     </span> 
+           </h2>
+
+           <a href="https://t.me/Malek_Accounting/46" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  Total Cost Of Production </span> </a>
+
+
+           <a href="https://t.me/Malek_Accounting/48" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  cost of manufactured - Gross margin - Operating income  </span> </a>
+
+
+
+           </div>
+
+
+
+
+           <div class="services"><h2> Cost  Accounting:2  
+            <span>   محاسبة  التكاليف   </span> 
+        </h2>
+
+
+        <a href="https://t.me/Malek_Accounting/58" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  compute the actual and budgeted manufacturing  overhead rates  - compute the under or overallocated manufacturing overhead   </span> </a>
+
+
+        <a href="https://t.me/Malek_Accounting/61" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  journal entries - قيود اليومية    </span> </a>
+
+
+
+        <a href="https://t.me/Malek_Accounting/50" target="_blank" style="text-decoration: none; color: #ffffff; background-color: #0088cc; padding: 15px; font-size: 26px; border-radius: 30px; margin-top: 10px;"> &#127789;  &#9749;  &#127909; <span>  Activity Cost   </span> </a>
+
+
+
+        </div>
+
+
+        <div class="services"><h2> managerial  Accounting   
+            <span>  المحاسبة الادارية    </span> 
+        </h2>
+
+
+
+        </div>
+
+
+        <div class="services"><h2> Accounting Reports    
+            <span>  تقارير محاسبية    </span> 
+        </h2>
+
+
+
+        </div>
+
+
+        <div class="services"><h2> Intermediate Accounting    
+            <span>  المحاسبة المتوسطة    </span> 
+        </h2>
+
+
+        </div>
+
+    
+
+
+        <div class="services"><h2> Inventories    
+            <span>  عمليات الجرد    </span> 
+        </h2>
+
+
+        </div>
+
+
+        <div class="services"><h2> Financial Statement Analysis    
+            <span>  التحليل المالي    </span> 
+        </h2>
+
+
+
+        </div>
+
+
+        <div class="services"><h2> حل الواجبات  </h2>
+
+
+
+            </div>
+
+
+            <div class="services"><h2> شرح  الواجبات  </h2>
+
+
+
+                 </div>
+
+
+                 <div class="services"><h2> حل الكويزات  </h2>
+
+
+
+                      </div>
+
+
+                      <div class="services"><h2> استفسارات محاسبية  </h2>
+
+
+                           </div>
+
+
+           
+       
+   </div>
+    
+   
+
+     
+
+
+     
+</body>
+</html>
